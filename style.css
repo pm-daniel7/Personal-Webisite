@@ -75,6 +75,7 @@ table {
     src: url('iAWriterMonoS-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 * {
@@ -726,8 +727,8 @@ pre {
 
 @media only screen and (max-width: 480px) {
     html, body {
-        font-size: clamp(10px, 2.75vw, 13px);
-        line-height: 20px;
+        font-size: 16px;
+        line-height: 24px;
     }
 
     button,
@@ -736,8 +737,19 @@ pre {
     .content-no-link,
     .content-toggle,
     .misc-item {
-        font-size: inherit;
-        line-height: inherit;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .about-text {
+        font-size: 15px !important;
+        line-height: 22px !important;
+    }
+
+    .about-beliefs li,
+    .about-risks li {
+        font-size: 15px !important;
+        line-height: 22px !important;
     }
 }
 
@@ -880,7 +892,7 @@ html.about-page body {
 }
 
 .about-heading {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 24px;
     font-weight: normal;
     text-transform: uppercase;
@@ -890,7 +902,7 @@ html.about-page body {
 }
 
 .about-text {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 24px;
     text-transform: none;
     margin: 0;
@@ -921,8 +933,8 @@ html.about-page body {
 
 .about-beliefs li,
 .about-risks li {
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 24px;
     padding-left: 3px;
     text-transform: none;
     text-align: justify;
@@ -970,14 +982,14 @@ html.about-page body {
     }
 
     .about-text {
-        font-size: 14px;
-        line-height: 22px;
+        font-size: 16px;
+        line-height: 24px;
     }
 
     .about-beliefs li,
     .about-risks li {
-        font-size: 13px;
-        line-height: 20px;
+        font-size: 16px;
+        line-height: 24px;
     }
 }
 

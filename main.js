@@ -7,6 +7,17 @@
     "use strict";
 
     // -------------------------------------------------------------
+    // Clean URLs: strip .html and /index.html from address bar
+    // -------------------------------------------------------------
+    try {
+        if (window.location.pathname.endsWith("/index.html") || window.location.pathname === "/index.html") {
+            window.history.replaceState(null, "", window.location.pathname.replace(/\/index\.html$/, "/") || "/");
+        } else if (window.location.pathname.endsWith(".html")) {
+            window.history.replaceState(null, "", window.location.pathname.replace(/\.html$/, ""));
+        }
+    } catch (e) {}
+
+    // -------------------------------------------------------------
     // 1. Theme Management (Themes 1 to 9 with LocalStorage persistence)
     // -------------------------------------------------------------
     var themeOrder = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];

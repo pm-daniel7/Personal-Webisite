@@ -18,16 +18,19 @@
     <meta property="og:url" content="https://danielander.com/">
     <meta property="og:title" content="DANIEL ANDER — EMERGING PRODUCT LEADER">
     <meta property="og:description" content="Driving customer-centric innovation and product strategy from discovery to scale. Dedicated to turning complex market challenges into intuitive, scalable products that deliver measurable customer impact and compound business growth.">
-    <meta property="og:image" content="https://danielander.com/Daniel%20Ander_LinkedIn_Headshot.jpg">
-    <meta property="og:image:alt" content="Daniel Ander — Emerging Product Leader">
+    <meta property="og:image" content="https://danielander.com/preview.jpg">
+    <meta property="og:image:secure_url" content="https://danielander.com/preview.jpg">
     <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="900">
+    <meta property="og:image:height" content="1200">
+    <meta property="og:image:alt" content="Daniel Ander — Emerging Product Leader">
 
     <!-- Twitter / X Cards -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://danielander.com/">
     <meta name="twitter:title" content="DANIEL ANDER — EMERGING PRODUCT LEADER">
     <meta name="twitter:description" content="Driving customer-centric innovation and product strategy from discovery to scale. Dedicated to turning complex market challenges into intuitive, scalable products that deliver measurable customer impact and compound business growth.">
-    <meta name="twitter:image" content="https://danielander.com/Daniel%20Ander_LinkedIn_Headshot.jpg">
+    <meta name="twitter:image" content="https://danielander.com/preview.jpg">
 
     <!-- Structured Data (JSON-LD) for Google Search Rich Results -->
     <script type="application/ld+json">
@@ -41,7 +44,7 @@
           "alternateName": ["PMD", "Daniel Ander PM"],
           "jobTitle": "Emerging Product Leader",
           "description": "Driving customer-centric innovation and product strategy from discovery to scale. Dedicated to turning complex market challenges into intuitive, scalable products that deliver measurable customer impact and compound business growth.",
-          "image": "https://danielander.com/Daniel%20Ander_LinkedIn_Headshot.jpg",
+          "image": "https://danielander.com/preview.jpg",
           "url": "https://danielander.com/",
           "sameAs": [
             "https://www.linkedin.com/in/pmdanielander/"
@@ -72,9 +75,17 @@
     <link rel="icon" href="favicon.png">
     <link rel="apple-touch-icon" href="icon.png">
 
-    <!-- Immediate theme restore to prevent flash -->
+    <!-- Immediate theme restore & clean URL -->
     <script>
         (function() {
+            try {
+                if (window.location.pathname.endsWith("/index.html") || window.location.pathname === "/index.html") {
+                    window.history.replaceState(null, "", window.location.pathname.replace(/\/index\.html$/, "/") || "/");
+                } else if (window.location.pathname.endsWith(".html")) {
+                    window.history.replaceState(null, "", window.location.pathname.replace(/\.html$/, ""));
+                }
+            } catch (e) {}
+
             try {
                 var stored = localStorage.getItem('theme');
                 if (stored && ['1','2','3','4','5','6','7','8','9'].indexOf(stored) !== -1) {
@@ -98,7 +109,7 @@
                 <div class="no-mobile content-row"><p>PMD</p></div>
                 <div class="no-mobile content-row content-row-empty"></div>
                 
-                <div class="content-row name-row"><p class="name-title"><span>DANIEL</span> <span>ANDER</span></p><span class="desktop-pad no-mobile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a id="link-about" class="content-link-anchor about-top-link" href="about.html" tabindex="1"><span class="button-label no-mobile">ABOUT</span><span class="mobile-only info-badge">[<svg class="info-icon" viewBox="0 0 24 24" width="11" height="11" fill="currentColor" style="display:inline-block; vertical-align:-1px; margin:0 1px;"><circle cx="14" cy="4.2" r="2.6"/><path d="M5.5 10 C8 9.2 11.2 9.8 11.5 12.8 L9.8 19.2 C9.2 21.4 10.4 22.4 13.2 22 C15.8 21.6 17.2 20 17.6 18.8 C16.8 19.6 15.2 20.2 13.8 19.8 C12.2 19.3 12.5 18 13 16.2 L14.8 9.8 C15.4 7.6 13.8 6.6 10.8 7 C7.8 7.4 5.5 10 5.5 10 Z"/></svg>]</span></a></div>
+                <div class="content-row name-row"><p class="name-title"><span>DANIEL</span> <span>ANDER</span></p><span class="desktop-pad no-mobile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a id="link-about" class="content-link-anchor about-top-link" href="/about" tabindex="1"><span class="button-label no-mobile">ABOUT</span><span class="mobile-only info-badge">[<svg class="info-icon" viewBox="0 0 24 24" width="11" height="11" fill="currentColor" style="display:inline-block; vertical-align:-1px; margin:0 1px;"><circle cx="14" cy="4.2" r="2.6"/><path d="M5.5 10 C8 9.2 11.2 9.8 11.5 12.8 L9.8 19.2 C9.2 21.4 10.4 22.4 13.2 22 C15.8 21.6 17.2 20 17.6 18.8 C16.8 19.6 15.2 20.2 13.8 19.8 C12.2 19.3 12.5 18 13 16.2 L14.8 9.8 C15.4 7.6 13.8 6.6 10.8 7 C7.8 7.4 5.5 10 5.5 10 Z"/></svg>]</span></a></div>
                 
                 <div class="content-row">
                     <p>
@@ -175,7 +186,7 @@
 
                 <!-- Links & Navigation -->
                 <div class="content-row">
-                    <a id="link-portfolio" class="content-link-anchor" href="portfolio.html" tabindex="1">
+                    <a id="link-portfolio" class="content-link-anchor" href="/portfolio" tabindex="1">
                         <span class="button-label">PORTFOLIO</span>
                         <span class="mobile-only">[↗]</span>
                     </a>
