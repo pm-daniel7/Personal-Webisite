@@ -250,6 +250,29 @@ html, body {
     padding-left: 0px !important;
 }
 
+.about-top-link:after {
+    display: none !important;
+    content: "" !important;
+}
+
+.about-top-link:hover,
+.about-top-link:active,
+.about-top-link:focus-visible {
+    color: var(--background) !important;
+    background: var(--foreground) !important;
+    border-radius: 2px;
+}
+
+.about-badge {
+    display: inline-block;
+    white-space: nowrap;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    letter-spacing: normal;
+}
+
 .info-badge {
     display: none;
     align-items: center;
@@ -634,7 +657,7 @@ pre {
         text-decoration: none;
     }
 
-    .about-mobile-badge {
+    .about-badge {
         display: inline-flex !important;
         align-items: center !important;
         color: currentColor !important;
@@ -793,7 +816,7 @@ pre {
     }
 
     .back-link,
-    .about-mobile-badge {
+    .about-badge {
         font-size: clamp(13px, 3.8vw, 14.5px) !important;
         line-height: 22px !important;
     }
