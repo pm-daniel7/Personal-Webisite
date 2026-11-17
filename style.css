@@ -72,7 +72,7 @@ table {
 
 @font-face {
     font-family: 'iaWriter';
-    src: url('iAWriterMonoS-Regular.woff') format('woff');
+    src: url('/iAWriterMonoS-Regular.woff') format('woff'), url('iAWriterMonoS-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -136,9 +136,11 @@ html, body {
     margin: 0;
     font-size: 16px;
     line-height: 24px;
-    font-family: 'iaWriter', 'Courier New', Courier, monospace;
+    font-family: 'iaWriter', monospace;
     background: var(--background);
     color: var(--foreground);
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
@@ -726,30 +728,9 @@ pre {
 }
 
 @media only screen and (max-width: 480px) {
-    html, body {
-        font-size: 16px;
-        line-height: 24px;
-    }
-
-    button,
-    a.content-link-anchor,
-    a.content-copy-anchor,
-    .content-no-link,
-    .content-toggle,
-    .misc-item {
-        font-size: 16px;
-        line-height: 24px;
-    }
-
-    .about-text {
-        font-size: 15px !important;
-        line-height: 22px !important;
-    }
-
-    .about-beliefs li,
-    .about-risks li {
-        font-size: 15px !important;
-        line-height: 22px !important;
+    html, body, button, a, p, span, li, .about-text, .about-beliefs li, .about-risks li {
+        font-size: 16px !important;
+        line-height: 24px !important;
     }
 }
 
@@ -870,7 +851,7 @@ html.about-page body {
 }
 
 .about-role {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
     text-transform: uppercase;
     opacity: 0.75;
