@@ -63,9 +63,9 @@ table {
     --interval-width: 9.63px;
     --interval-height: 24px;
 
-    /* Theme 1 default */
-    --background: #FFFFFF;
-    --foreground: #33333A;
+    /* Theme 6 default matching p.cv */
+    --background: #11111A;
+    --foreground: #DDDDDD;
 
     --copy-text: " [+]";
 }

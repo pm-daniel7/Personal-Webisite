@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="1" class="about-page">
+<html lang="en" data-theme="6" class="about-page">
 
 <head>
     <meta charset="UTF-8">
@@ -73,10 +73,8 @@
                 var stored = localStorage.getItem('theme');
                 if (stored && ['1','2','3','4','5','6','7','8','9'].indexOf(stored) !== -1) {
                     document.documentElement.setAttribute('data-theme', stored);
-                } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                    document.documentElement.setAttribute('data-theme', '6');
                 } else {
-                    document.documentElement.setAttribute('data-theme', '1');
+                    document.documentElement.setAttribute('data-theme', '6');
                 }
             } catch(e) {}
         })();

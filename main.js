@@ -24,7 +24,7 @@
 
     function applyTheme(theme) {
         if (!theme || themeOrder.indexOf(theme) === -1) {
-            theme = "1";
+            theme = "6";
         }
         document.documentElement.setAttribute("data-theme", theme);
         try {
@@ -42,15 +42,13 @@
 
         if (storedTheme && themeOrder.indexOf(storedTheme) !== -1) {
             applyTheme(storedTheme);
-        } else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
-            applyTheme("6"); // Dark theme fallback
         } else {
-            applyTheme("1"); // Light theme default
+            applyTheme("6"); // Dark theme default matching p.cv
         }
     }
 
     function cycleTheme() {
-        var currentTheme = document.documentElement.getAttribute("data-theme") || "1";
+        var currentTheme = document.documentElement.getAttribute("data-theme") || "6";
         var currentIndex = themeOrder.indexOf(currentTheme);
         var nextIndex = (currentIndex + 1) % themeOrder.length;
         var nextTheme = themeOrder[nextIndex];
