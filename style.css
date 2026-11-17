@@ -792,9 +792,21 @@ pre {
         line-height: 22px;
     }
 
-    .about-text, .about-beliefs li, .about-risks li {
-        font-size: 15px;
-        line-height: 23px;
+    .back-link,
+    .about-mobile-badge {
+        font-size: clamp(13px, 3.8vw, 14.5px) !important;
+        line-height: 22px !important;
+    }
+
+    .about-text {
+        font-size: 14px !important;
+        line-height: 22px !important;
+    }
+
+    .about-beliefs li,
+    .about-risks li {
+        font-size: 13px !important;
+        line-height: 20px !important;
     }
 }
 
@@ -915,7 +927,7 @@ html.about-page body {
 }
 
 .about-role {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
     text-transform: uppercase;
     opacity: 0.75;
@@ -937,7 +949,7 @@ html.about-page body {
 }
 
 .about-heading {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 24px;
     font-weight: normal;
     text-transform: uppercase;
@@ -947,7 +959,7 @@ html.about-page body {
 }
 
 .about-text {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 24px;
     text-transform: none;
     margin: 0;
@@ -978,8 +990,8 @@ html.about-page body {
 
 .about-beliefs li,
 .about-risks li {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 22px;
     padding-left: 3px;
     text-transform: none;
     text-align: justify;
@@ -1026,15 +1038,25 @@ html.about-page body {
         padding-bottom: 48px;
     }
 
+    .about-role {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .about-heading {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
     .about-text {
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 14px !important;
+        line-height: 22px !important;
     }
 
     .about-beliefs li,
     .about-risks li {
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 13px !important;
+        line-height: 20px !important;
     }
 }
 
