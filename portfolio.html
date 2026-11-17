@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="1">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>DANIEL ANDER</title>
+    <meta name="description" content="Portfolio of Daniel Ander — Coming Soon">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <!-- Immediate theme restore to prevent flash -->
+    <script>
+        (function() {
+            try {
+                var stored = localStorage.getItem('theme');
+                if (stored && ['1','2','3','4','5','6','7','8','9'].indexOf(stored) !== -1) {
+                    document.documentElement.setAttribute('data-theme', stored);
+                } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    document.documentElement.setAttribute('data-theme', '6');
+                } else {
+                    document.documentElement.setAttribute('data-theme', '1');
+                }
+            } catch(e) {}
+        })();
+    </script>
+</head>
+
+<body id="body-container">
+
+    <div class="outer-container">
+        <div class="inner-container">
+        
+            <div class="content-container">
+                <!-- Back Button in p.cv Monospace Style -->
+                <div class="content-row">
+                    <a id="back-link" class="back-link" href="index.html" tabindex="1">
+                        <span class="button-label">[← BACK]</span>
+                    </a>
+                </div>
+
+                <div class="content-row content-row-empty"></div>
+
+                <!-- Centered Typewriter "COMING SOON" -->
+                <div class="portfolio-center-container">
+                    <div class="content-row" style="justify-content: center; width: auto;">
+                        <p class="portfolio-coming-soon">
+                            <span id="portfolio-typewriter"></span><span class="cursor" aria-hidden="true">_</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Theme Toggle Button at Bottom -->
+                <div class="content-row content-row-bottom">
+                    <button id="theme-toggle" class="content-switch" tabindex="1">
+                        <span class="button-label no-mobile">THEME</span>
+                        <span class="mobile-only">[⬏]</span>
+                    </button>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

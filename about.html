@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="1" class="about-page">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>DANIEL ANDER</title>
+    <meta name="description" content="About Daniel Ander — Emerging Product Leader">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <!-- Immediate theme restore to prevent flash -->
+    <script>
+        (function() {
+            try {
+                var stored = localStorage.getItem('theme');
+                if (stored && ['1','2','3','4','5','6','7','8','9'].indexOf(stored) !== -1) {
+                    document.documentElement.setAttribute('data-theme', stored);
+                } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    document.documentElement.setAttribute('data-theme', '6');
+                } else {
+                    document.documentElement.setAttribute('data-theme', '1');
+                }
+            } catch(e) {}
+        })();
+    </script>
+</head>
+
+<body id="body-container">
+
+    <div class="outer-container">
+        <div class="inner-container">
+        
+            <div class="content-container about-content-container">
+                <!-- Back Button in p.cv Monospace Style -->
+                <div class="content-row about-nav-row">
+                    <a id="back-link" class="back-link" href="index.html" tabindex="1">
+                        <span class="button-label">[← BACK]</span>
+                    </a>
+                </div>
+
+                <!-- Sticky Hero Headshot -->
+                <div class="about-hero">
+                    <div class="about-photo-frame">
+                        <img src="Daniel Ander_LinkedIn_Headshot.jpg" alt="Daniel Ander" class="about-photo">
+                    </div>
+                </div>
+
+                <!-- About Me Monospace Article (Curtain) -->
+                <article class="about-container">
+                    <header class="about-header">
+                        <h1 class="about-name">DANIEL ANDER</h1>
+                        <p class="about-role">EMERGING PRODUCT LEADER</p>
+                    </header>
+
+                    <div class="about-body">
+                        <section class="about-section">
+                            <h2 class="about-heading">[STRATEGIC VISION]</h2>
+                            <p class="about-text">
+                                Driving customer-centric innovation and product strategy from discovery to scale. Dedicated to turning complex market challenges into intuitive, scalable products that deliver measurable customer impact and compound business growth.
+                            </p>
+                        </section>
+
+                        <section class="about-section">
+                            <h2 class="about-heading">[WHAT I BELIEVE]</h2>
+                            <ul class="about-beliefs">
+                                <li>↳ <strong>CONTINUOUS DISCOVERY &amp; DELIVERY:</strong> Going out there to talk to users, uncovering the real problem, and feeding that directly into what we build.</li>
+                                <li>↳ <strong>RAPID EXPERIMENTATION:</strong> A continuous loop of prototyping and testing with real users, validating assumptions early, and shipping what actually works.</li>
+                                <li>↳ <strong>OUTCOMES OVER OUTPUTS:</strong> It's not just about building and shipping features, but about the measurable customer outcomes and compounding value of what we ship.</li>
+                            </ul>
+                        </section>
+
+                        <section class="about-section">
+                            <h2 class="about-heading">[PRODUCT OPERATING PHILOSOPHY]</h2>
+                            <p class="about-text">
+                                Rooted in the SVPG product discovery and management principles championed by Marty Cagan, Teresa Torres, and Shreyas Doshi. Systematically evaluating and de-risking the four big product risks before scaling:
+                            </p>
+                            <ul class="about-risks">
+                                <li>↳ <strong>VALUE RISK:</strong> Will customers choose to use and buy this product?</li>
+                                <li>↳ <strong>USABILITY RISK:</strong> Can users easily figure out how to navigate and use it?</li>
+                                <li>↳ <strong>FEASIBILITY RISK:</strong> Can our engineering and tech team deliver it within constraints?</li>
+                                <li>↳ <strong>VIABILITY RISK:</strong> Does this product work for our business, legal, and operational strategy?</li>
+                            </ul>
+                        </section>
+
+                        <section class="about-section">
+                            <h2 class="about-heading">[TRACK RECORD]</h2>
+                            <p class="about-text">
+                                Cross-functional background spanning product management, program coordination, commercial management, and hands-on execution across Union Bank of Nigeria, VentureXYZ, Microsoft ADC, Innovate Africa Foundation, Product Leadership Accelerator, Float XR, KodeCamp, and 1MinutePay.
+                            </p>
+                        </section>
+                    </div>
+                </article>
+
+                <div class="content-row content-row-empty"></div>
+
+                <!-- Theme Toggle Button at Bottom -->
+                <div class="content-row content-row-bottom">
+                    <button id="theme-toggle" class="content-switch" tabindex="1">
+                        <span class="button-label no-mobile">THEME</span>
+                        <span class="mobile-only">[⬏]</span>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- ASCII Art Container matching index.html / p.cv -->
+            <div id="ascii" class="ascii-container">
+                <pre data-selection-enabled="false"></pre>
+                <div id="ascii-hint" class="ascii-hint">[&nbsp;]</div>
+            </div>
+
+            <div id="ascii-click" class="ascii-click-container"></div>
+            
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="ascii.js" defer></script>
+</body>
+</html>

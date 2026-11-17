@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="1">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>DANIEL ANDER</title>
+    <meta name="description" content="DANIEL ANDER — Product Portfolio">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <!-- Immediate theme restore to prevent flash -->
+    <script>
+        (function() {
+            try {
+                var stored = localStorage.getItem('theme');
+                if (stored && ['1','2','3','4','5','6','7','8','9'].indexOf(stored) !== -1) {
+                    document.documentElement.setAttribute('data-theme', stored);
+                } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    document.documentElement.setAttribute('data-theme', '6');
+                } else {
+                    document.documentElement.setAttribute('data-theme', '1');
+                }
+            } catch(e) {}
+        })();
+    </script>
+</head>
+
+<body id="body-container">
+
+    <div class="outer-container">
+        <div class="inner-container">
+        
+            <div class="content-container">
+                <div class="no-mobile content-row"><p>PMD</p></div>
+                <div class="no-mobile content-row content-row-empty"></div>
+                
+                <div class="content-row name-row"><p class="name-title"><span>DANIEL</span> <span>ANDER</span></p><span class="desktop-pad no-mobile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a id="link-about" class="content-link-anchor about-top-link" href="about.html" tabindex="1"><span class="button-label no-mobile">ABOUT</span><span class="mobile-only info-badge">[<svg class="info-icon" viewBox="0 0 24 24" width="11" height="11" fill="currentColor" style="display:inline-block; vertical-align:-1px; margin:0 1px;"><circle cx="14" cy="4.2" r="2.6"/><path d="M5.5 10 C8 9.2 11.2 9.8 11.5 12.8 L9.8 19.2 C9.2 21.4 10.4 22.4 13.2 22 C15.8 21.6 17.2 20 17.6 18.8 C16.8 19.6 15.2 20.2 13.8 19.8 C12.2 19.3 12.5 18 13 16.2 L14.8 9.8 C15.4 7.6 13.8 6.6 10.8 7 C7.8 7.4 5.5 10 5.5 10 Z"/></svg>]</span></a></div>
+                
+                <div class="content-row">
+                    <p>
+                        <span class="mobile-text typewriter-wrapper"><span id="typewriter-prefix">I DO </span><span id="typewriter-text">PRODUCT</span><span class="cursor" aria-hidden="true">_</span></span>
+                    </p>
+                </div>
+                
+                <div class="content-row content-row-empty"></div>
+
+                <!-- Experience Rows -->
+                <div class="content-row">
+                    <a id="link-unionbank" class="content-link-anchor" href="https://www.unionbankng.com/" target="_blank" rel="noopener noreferrer" tabindex="1">
+                        <span class="button-label">UNION BANK OF NIGERIA&nbsp;&nbsp;&nbsp;2026&nbsp;→&nbsp;2026</span>
+                        <span class="mobile-only">[↗]</span>
+                    </a>
+                </div>
+
+                <div class="content-row">
+                    <a id="link-venturexyz" class="content-link-anchor" href="https://venturexyz.io/" target="_blank" rel="noopener noreferrer" tabindex="1">
+                        <span class="button-label">VENTUREXYZ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2025&nbsp;→&nbsp;2026</span>
+                        <span class="mobile-only">[↗]</span>
+                    </a>
+                </div>
+
+                <div class="content-row">
+                    <a id="link-microsoftadc" class="content-link-anchor" href="https://www.microsoft.com/en-us/madc" target="_blank" rel="noopener noreferrer" tabindex="1">
+                        <span class="button-label">MICROSOFT ADC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2023&nbsp;→&nbsp;2025</span>
+                        <span class="mobile-only">[↗]</span>
+                    </a>
+                </div>
+
+                <div class="content-row">
+                    <button id="misc-toggle" class="content-toggle" tabindex="1" aria-expanded="false">
+                        <span class="button-label">MISC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2022&nbsp;→&nbsp;····</span>
+                        <span id="misc-toggle-indicator" class="mobile-only">[+]</span>
+                    </button>
+                </div>
+
+                <!-- Expandable Sub-list for MISC -->
+                <div id="misc-dropdown" class="misc-dropdown" style="display: none;">
+                    <div class="content-row misc-sub-row">
+                        <a class="content-link-anchor sub-item" href="https://www.innovateafricafoundation.org/" target="_blank" rel="noopener noreferrer" tabindex="1">
+                            <span class="button-label sub-label">&nbsp;&nbsp;↳ INNOVATE AFRICA FOUNDATION</span>
+                            <span class="mobile-only">[↗]</span>
+                        </a>
+                    </div>
+                    <div class="content-row misc-sub-row">
+                        <a class="content-link-anchor sub-item" href="https://africapla.com/" target="_blank" rel="noopener noreferrer" tabindex="1">
+                            <span class="button-label sub-label">&nbsp;&nbsp;↳ PRODUCT LEADERSHIP ACCELERATOR</span>
+                            <span class="mobile-only">[↗]</span>
+                        </a>
+                    </div>
+                    <div class="content-row misc-sub-row">
+                        <a class="content-link-anchor sub-item" href="https://1minutepay.com/" target="_blank" rel="noopener noreferrer" tabindex="1">
+                            <span class="button-label sub-label">&nbsp;&nbsp;↳ 1MINUTEPAY</span>
+                            <span class="mobile-only">[↗]</span>
+                        </a>
+                    </div>
+                    <div class="content-row misc-sub-row">
+                        <a class="content-link-anchor sub-item" href="https://floatsanywhere.com/" target="_blank" rel="noopener noreferrer" tabindex="1">
+                            <span class="button-label sub-label">&nbsp;&nbsp;↳ FLOAT XR</span>
+                            <span class="mobile-only">[↗]</span>
+                        </a>
+                    </div>
+                    <div class="content-row misc-sub-row">
+                        <a class="content-link-anchor sub-item" href="https://kode.camp/" target="_blank" rel="noopener noreferrer" tabindex="1">
+                            <span class="button-label sub-label">&nbsp;&nbsp;↳ KODECAMP</span>
+                            <span class="mobile-only">[↗]</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="content-row content-row-empty"></div>
+
+                <!-- Links & Navigation -->
+                <div class="content-row">
+                    <a id="link-portfolio" class="content-link-anchor" href="portfolio.html" tabindex="1">
+                        <span class="button-label">PORTFOLIO</span>
+                        <span class="mobile-only">[↗]</span>
+                    </a>
+                </div>
+
+                <div class="content-row">
+                    <!-- Desktop Email Copy -->
+                    <button id="email-copy" class="no-mobile content-copy" tabindex="1">
+                        <span class="button-label">EMAIL</span>
+                    </button>
+                    <!-- Mobile Email Link -->
+                    <a id="email-link" class="mobile-only content-copy-anchor" href="mailto:pmdanielander.com" data-copy-email="pmdanielander.com" tabindex="1">
+                        <span class="button-label">EMAIL</span>
+                        <span class="mobile-only">[+]</span>
+                    </a>
+                </div>
+
+                <div class="content-row">
+                    <a id="link-linkedin" class="content-link-anchor" href="https://www.linkedin.com/in/pmdanielander/" target="_blank" rel="noopener noreferrer" tabindex="1">
+                        <span class="button-label">LINKEDIN</span>
+                        <span class="mobile-only">[↗]</span>
+                    </a>
+                </div>
+
+                <div class="content-row content-row-empty"></div>
+
+                <!-- Theme Toggle Button -->
+                <div class="content-row content-row-bottom">
+                    <button id="theme-toggle" class="content-switch" tabindex="1">
+                        <span class="button-label no-mobile">THEME</span>
+                        <span class="mobile-only">[⬏]</span>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- ASCII Art Container matching p.cv -->
+            <div id="ascii" class="ascii-container">
+                <pre data-selection-enabled="false"></pre>
+                <div id="ascii-hint" class="ascii-hint">[&nbsp;]</div>
+            </div>
+
+            <div id="ascii-click" class="ascii-click-container"></div>
+            
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="ascii.js" defer></script>
+</body>
+</html>
