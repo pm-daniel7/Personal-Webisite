@@ -161,6 +161,44 @@
         }
 
         // -------------------------------------------------------------
+        // 3b. Featured Quotes Ticker (Vertical Upwards Transition)
+        // -------------------------------------------------------------
+        var quoteTicker = document.getElementById("quote-ticker");
+        if (quoteTicker) {
+            var quoteItems = quoteTicker.querySelectorAll(".quote-item");
+            if (quoteItems.length > 1) {
+                var currentQuoteIdx = 0;
+                var quoteInterval = 3800; // Hold each quote for 3.8s
+
+                setInterval(function () {
+                    var currentItem = quoteItems[currentQuoteIdx];
+                    var nextQuoteIdx = (currentQuoteIdx + 1) % quoteItems.length;
+                    var nextItem = quoteItems[nextQuoteIdx];
+
+                    // Prepare incoming quote at bottom
+                    nextItem.classList.remove("exit-up");
+                    nextItem.classList.add("enter-from-bottom");
+                    void nextItem.offsetWidth; // Trigger DOM reflow
+
+                    // Slide current quote UP and out
+                    currentItem.classList.remove("active");
+                    currentItem.classList.add("exit-up");
+
+                    // Slide next quote UP into view
+                    nextItem.classList.remove("enter-from-bottom");
+                    nextItem.classList.add("active");
+
+                    // Clean up exited item after transition completes
+                    setTimeout(function () {
+                        currentItem.classList.remove("exit-up");
+                    }, 700);
+
+                    currentQuoteIdx = nextQuoteIdx;
+                }, quoteInterval);
+            }
+        }
+
+        // -------------------------------------------------------------
         // 4. MISC Dropdown Sub-List Toggle
         // -------------------------------------------------------------
         var miscToggle = document.getElementById("misc-toggle");
