@@ -119,24 +119,44 @@
         }
 
         // -------------------------------------------------------------
-        // 3. Coming Soon Typewriter (portfolio, resources, blog)
+        // 3. Coming Soon Typewriter (projects, portfolio, blog)
         // -------------------------------------------------------------
         var csTypewriters = document.querySelectorAll(".coming-soon-typewriter, #portfolio-typewriter, #coming-soon-typewriter");
         if (csTypewriters.length > 0) {
             csTypewriters.forEach(function (el) {
                 var fullMsg = el.getAttribute("data-text") || "COMING SOON";
-                var idx = 0;
+                var currentLength = 0;
+                var isDeleting = false;
+                var typeSpeed = 90;
+                var deleteSpeed = 45;
+                var holdDelay = 2000;
+                var pauseDelay = 400;
+
                 el.textContent = "";
 
-                function typeMsg() {
-                    if (idx < fullMsg.length) {
-                        el.textContent += fullMsg.charAt(idx);
-                        idx++;
-                        setTimeout(typeMsg, 100);
+                function runCsTypewriter() {
+                    if (!isDeleting) {
+                        if (currentLength < fullMsg.length) {
+                            currentLength++;
+                            el.textContent = fullMsg.substring(0, currentLength);
+                            setTimeout(runCsTypewriter, typeSpeed);
+                        } else {
+                            isDeleting = true;
+                            setTimeout(runCsTypewriter, holdDelay);
+                        }
+                    } else {
+                        if (currentLength > 0) {
+                            currentLength--;
+                            el.textContent = fullMsg.substring(0, currentLength);
+                            setTimeout(runCsTypewriter, deleteSpeed);
+                        } else {
+                            isDeleting = false;
+                            setTimeout(runCsTypewriter, pauseDelay);
+                        }
                     }
                 }
 
-                setTimeout(typeMsg, 300);
+                setTimeout(runCsTypewriter, 300);
             });
         }
 
