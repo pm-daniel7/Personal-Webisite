@@ -119,23 +119,25 @@
         }
 
         // -------------------------------------------------------------
-        // 3. Portfolio Page Typewriter (portfolio.html: COMING SOON)
+        // 3. Coming Soon Typewriter (portfolio, resources, blog)
         // -------------------------------------------------------------
-        var portfolioTypewriter = document.getElementById("portfolio-typewriter");
-        if (portfolioTypewriter) {
-            var fullMessage = "COMING SOON";
-            var charIndex = 0;
-            portfolioTypewriter.textContent = "";
+        var csTypewriters = document.querySelectorAll(".coming-soon-typewriter, #portfolio-typewriter, #coming-soon-typewriter");
+        if (csTypewriters.length > 0) {
+            csTypewriters.forEach(function (el) {
+                var fullMsg = el.getAttribute("data-text") || "COMING SOON";
+                var idx = 0;
+                el.textContent = "";
 
-            function typePortfolioMessage() {
-                if (charIndex < fullMessage.length) {
-                    portfolioTypewriter.textContent += fullMessage.charAt(charIndex);
-                    charIndex++;
-                    setTimeout(typePortfolioMessage, 100);
+                function typeMsg() {
+                    if (idx < fullMsg.length) {
+                        el.textContent += fullMsg.charAt(idx);
+                        idx++;
+                        setTimeout(typeMsg, 100);
+                    }
                 }
-            }
 
-            setTimeout(typePortfolioMessage, 300);
+                setTimeout(typeMsg, 300);
+            });
         }
 
         // -------------------------------------------------------------
