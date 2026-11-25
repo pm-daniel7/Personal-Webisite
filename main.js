@@ -487,7 +487,7 @@
 
             // Interactive element hover detection to switch cursor
             document.addEventListener("mouseover", function (e) {
-                var interactive = e.target.closest("a, button, .content-link-anchor, .content-copy, .content-copy-anchor, .content-toggle, .content-switch, .back-link, #ascii-click, [tabindex=\"1\"], [role=\"button\"]");
+                var interactive = e.target.closest("a, button, .content-link-anchor, .content-copy, .content-copy-anchor, .content-toggle, .content-switch, .back-link, [tabindex=\"1\"], [role=\"button\"]");
                 var isNoLink = e.target.closest(".content-no-link");
 
                 if (interactive && !isNoLink) {

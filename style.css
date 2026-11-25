@@ -58,7 +58,7 @@ table {
 
 /* Variables & Font */
 :root {
-    --container-width: calc(100vw - 74px);
+    --container-width: 356px;
     --container-height: calc(100vh - 80px);
     --interval-width: 9.63px;
     --interval-height: 24px;
@@ -182,19 +182,24 @@ html, body {
 }
 
 .outer-container {
-    width: 100vw;
-    height: 100vh;
-    display: grid;
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 608px;
+    padding: 40px 16px;
+    box-sizing: border-box;
 }
 
 .inner-container {
     position: relative;
-    width: var(--container-width);
+    width: 100%;
+    max-width: 362px;
     height: calc(100vh - 80px);
     min-height: 480px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .content-container {
@@ -215,8 +220,8 @@ html, body {
     height: 24px;
     text-transform: uppercase;
     user-select: none;
-    width: auto;
-    max-width: 48%;
+    width: 100%;
+    max-width: 100%;
     display: flex;
     align-items: center;
     pointer-events: none;
@@ -225,8 +230,8 @@ html, body {
 .name-row {
     display: flex;
     align-items: center;
-    width: auto;
-    max-width: 48%;
+    width: 100%;
+    max-width: 100%;
     pointer-events: none;
 }
 
@@ -347,7 +352,9 @@ a.content-copy-anchor,
 }
 
 .exp-row {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
 }
 
 .exp-title,
@@ -477,51 +484,11 @@ a:active {
     }
 }
 
-/* ASCII canvas container */
-.ascii-container {
-    position: absolute;
-    width: 64%;
-    height: 100%;
-    right: 3px;
-    top: 0px;
-    pointer-events: none;
-    overflow: hidden;
-    z-index: 10;
-}
-
-.ascii-click-container {
-    position: absolute;
-    width: 64%;
-    height: calc(100% + 40px);
-    right: 3px;
-    top: -40px;
-    z-index: 15;
-    pointer-events: auto;
-}
-
-pre {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    font-family: inherit;
-    text-align: right;
-    user-select: none;
-}
-
+/* ASCII canvas container - removed */
+.ascii-container,
+.ascii-click-container,
 .ascii-hint {
-    display: none;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    background: var(--background);
-    pointer-events: none;
-    user-select: none;
-    cursor: default;
-}
-
-.ascii-hint.show {
-    display: block;
+    display: none !important;
 }
 
 /* Portfolio Page specific */
@@ -857,6 +824,10 @@ html.about-page body {
     height: auto;
     min-height: calc(100vh - 80px);
     min-height: calc(100dvh - 80px);
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .about-content-container {
@@ -1101,27 +1072,7 @@ html.about-page body {
     }
 }
 
-@media only screen and (min-width: 1025px) {
-    .about-page .ascii-container {
-        position: fixed !important;
-        top: 40px !important;
-        right: calc((100vw - var(--container-width)) / 2 + 3px) !important;
-        width: 50% !important;
-        height: calc(100vh - 80px) !important;
-        z-index: 10 !important;
-        pointer-events: none !important;
-    }
 
-    .about-page .ascii-click-container {
-        position: fixed !important;
-        top: 0px !important;
-        right: calc((100vw - var(--container-width)) / 2 + 3px) !important;
-        width: 50% !important;
-        height: 100vh !important;
-        z-index: 15 !important;
-        pointer-events: auto !important;
-    }
-}
 
 /* -------------------------------------------------------------
  * Featured Quotes Ticker (Homepage Vertical Upward Transition)
@@ -1231,13 +1182,22 @@ html.project-page body {
     height: auto;
     min-height: 100vh;
     min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 40px;
     padding-bottom: 48px;
+    box-sizing: border-box;
 }
 
 .project-page .inner-container {
     height: auto;
     min-height: calc(100vh - 80px);
     min-height: calc(100dvh - 80px);
+    width: 100%;
+    max-width: 362px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .project-content-container {
@@ -1450,24 +1410,4 @@ html.project-page body {
     }
 }
 
-@media only screen and (min-width: 1025px) {
-    .project-page .ascii-container {
-        position: fixed !important;
-        top: 40px !important;
-        right: calc((100vw - var(--container-width)) / 2 + 3px) !important;
-        width: 50% !important;
-        height: calc(100vh - 80px) !important;
-        z-index: 10 !important;
-        pointer-events: none !important;
-    }
 
-    .project-page .ascii-click-container {
-        position: fixed !important;
-        top: 0px !important;
-        right: calc((100vw - var(--container-width)) / 2 + 3px) !important;
-        width: 50% !important;
-        height: 100vh !important;
-        z-index: 15 !important;
-        pointer-events: auto !important;
-    }
-}
