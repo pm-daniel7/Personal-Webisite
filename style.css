@@ -1212,7 +1212,7 @@ html.project-page body {
 .project-container {
     margin-top: 8px;
     width: 100%;
-    max-width: 356px;
+    max-width: 100%;
     box-sizing: border-box;
     pointer-events: auto;
 }
@@ -1236,7 +1236,7 @@ html.project-page body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 356px;
+    max-width: 100%;
     height: 28px;
     box-sizing: border-box;
     pointer-events: auto;
@@ -1336,6 +1336,33 @@ html.project-page body {
     font-weight: bold;
     opacity: 1;
     font-style: normal;
+}
+
+.project-link-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    height: 24px;
+    box-sizing: border-box;
+    pointer-events: auto;
+}
+
+.project-link-label {
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    color: var(--foreground);
+    opacity: 0.85;
+    padding-left: 3px;
+    text-transform: uppercase;
+}
+
+.project-code-link {
+    display: inline-flex;
+    align-items: center;
+    padding-left: 0px !important;
+    text-decoration: none;
 }
 
 .project-page .content-row-bottom {

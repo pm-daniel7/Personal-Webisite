@@ -11,7 +11,7 @@
     <meta name="description" content="Side projects, ventures, and experimental products by Daniel Ander.">
     <meta name="author" content="Daniel Ander">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta name="keywords" content="Daniel Ander, Side Projects, Experimentations, Products, Venture Building, Gateman-AI">
+    <meta name="keywords" content="Daniel Ander, Side Projects, Experimentations, Products, Venture Building, Gateman-AI, MoneyFlow, Personal Finance">
     <link rel="canonical" href="https://danielander.com/projects">
     
     <!-- Social Media Sharing & Open Graph Preview -->
@@ -54,12 +54,19 @@
           "applicationCategory": "MultimediaApplication",
           "operatingSystem": "Web, Mobile",
           "description": "An AI-native video management platform. Gateman-AI adds sensing, intelligence and memory to your cameras, so your space answers questions instead of just storing footage."
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "MoneyFlow",
+          "applicationCategory": "FinanceApplication",
+          "operatingSystem": "Web (PWA)",
+          "description": "Local-first envelope budgeting and multi-currency cashflow sync tool built for personal financial management."
         }
       ]
     }
     </script>
     
-    <link rel="stylesheet" href="style.css?v=10">
+    <link rel="stylesheet" href="style.css?v=11">
     <link rel="icon" href="favicon.png">
     <link rel="apple-touch-icon" href="icon.png">
 
@@ -112,10 +119,10 @@
                     <header class="project-header">
                         <div class="content-row project-title-row">
                             <span class="project-name">GATEMAN-AI</span>
-                            <span class="project-phase">[PHASE: DISCOVERY]</span>
+                            <span class="project-phase">[PUBLIC · DISCOVERY]</span>
                         </div>
                         <div class="project-tagline-group">
-                            <p class="project-tagline">AN AI-NATIVE VIDEO MANAGEMENT PLATFORM.</p>
+                            <p class="project-tagline">AN AI-NATIVE VIDEO MANAGEMENT PLATFORM (PUBLIC).</p>
                             <p class="project-tagline">YOUR CAMERAS, BUT YOU CAN ASK THEM THINGS.</p>
                         </div>
                     </header>
@@ -145,6 +152,66 @@
                                 <li>→ <strong>EVERY ANSWER CITES THE CLIP:</strong> Alerts and answers link back to the footage they came from.</li>
                                 <li>→ <strong>WHEREVER YOU ALREADY ARE:</strong> Web, mobile alerts and WhatsApp.</li>
                             </ul>
+                        </section>
+                    </div>
+                </article>
+
+                <div class="content-row content-row-empty"></div>
+                <div class="content-row content-row-empty"></div>
+
+                <!-- MoneyFlow Project Showcase -->
+                <article class="project-container">
+                    <header class="project-header">
+                        <div class="content-row project-title-row">
+                            <span class="project-name">MONEYFLOW</span>
+                            <span class="project-phase">[PERSONAL · PROTOTYPING]</span>
+                        </div>
+                        <div class="project-tagline-group">
+                            <p class="project-tagline">LOCAL-FIRST MULTI-CURRENCY CASHFLOW SYNC.</p>
+                            <p class="project-tagline">BUILT FOR PERSONAL USE (NOT A PUBLIC PRODUCT).</p>
+                        </div>
+                    </header>
+
+                    <div class="content-row content-row-empty"></div>
+
+                    <div class="project-body">
+                        <section class="project-section">
+                            <h2 class="project-heading">[THE PROBLEM]</h2>
+                            <p class="about-text project-lead">
+                                Spreadsheets start with high intent, but quickly break under the friction of daily life. Between micro cash spends, multi-currency income, and reimbursable work expenses, manual tracking becomes exhausting—leading to tracking fatigue, stale mid-month spreadsheets, and silent formula errors.
+                            </p>
+                        </section>
+
+                        <div class="content-row content-row-empty"></div>
+
+                        <section class="project-section">
+                            <h2 class="project-heading">[CORE FRICTIONS]</h2>
+                            <ul class="about-beliefs project-features">
+                                <li>↳ <strong>LOGGING FATIGUE:</strong> Spending 30–60 seconds per small transaction across multiple tabs causes habit drop-off within weeks.</li>
+                                <li>↳ <strong>FRAGILE SPREADSHEET FORMULAS:</strong> Manually carrying balances forward (Auto BBF), deducting work expenses, and tracking peer loans leads to calculation bugs.</li>
+                                <li>↳ <strong>MULTI-CURRENCY &amp; FX DISTORTION:</strong> Earning across USD, GBP, or EUR breaks single-currency trackers while still requiring unified Naira (₦) visibility.</li>
+                                <li>↳ <strong>SAAS LOCK-IN VS. DATA PRIVACY:</strong> Commercial budgeting tools store sensitive financial history on third-party servers, while offline-only tools trap records without backup.</li>
+                            </ul>
+                        </section>
+
+                        <div class="content-row content-row-empty"></div>
+
+                        <section class="project-section">
+                            <h2 class="project-heading">[THE PROTOTYPE]</h2>
+                            <p class="about-text project-lead">
+                                A personal, zero-SaaS offline PWA that records expenses in under 3 seconds and syncs directly to my private Google Sheet for reporting.
+                            </p>
+                        </section>
+
+                        <div class="content-row content-row-empty"></div>
+
+                        <section class="project-section">
+                            <div class="content-row project-link-row">
+                                <span class="project-link-label">SOURCE CODE</span>
+                                <a id="link-moneyflow-github" class="content-link-anchor project-code-link" href="#" target="_blank" rel="noopener noreferrer" tabindex="1">
+                                    <span class="about-badge">[GITHUB REPO&nbsp;↗]</span>
+                                </a>
+                            </div>
                         </section>
                     </div>
                 </article>
