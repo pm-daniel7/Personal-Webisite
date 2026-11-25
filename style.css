@@ -1266,7 +1266,7 @@ html.project-page body {
 .project-body {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 0;
 }
 
 .project-title-row {
