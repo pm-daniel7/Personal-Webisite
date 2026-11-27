@@ -1392,7 +1392,7 @@ button {
 ================================================================= */
 .tools-strip-section {
   background-color: var(--background-color);
-  padding: 48px 0;
+  padding: 28px 0;
   margin: 0;
   overflow: hidden;
 }
@@ -1472,7 +1472,7 @@ button {
 ================================================================= */
 .testimonials-section {
   overflow: hidden;
-  padding: 48px 0;
+  padding: 28px 0;
   margin: 0;
 }
 
@@ -1698,8 +1698,8 @@ button {
    SECTION 11: BLOG ARTICLES
 ================================================================= */
 .blog-section .body-container {
-  padding-top: clamp(2rem, 8vw, 6rem);
-  padding-bottom: clamp(2rem, 8vw, 6rem);
+  padding-top: clamp(2rem, 4vw, 3.5rem);
+  padding-bottom: clamp(2rem, 4vw, 3.5rem);
 }
 
 .blog-section .section__headline {
@@ -4151,7 +4151,7 @@ button {
 
 /* Homepage About Me 2x2 Bento Section */
 .about-home-section {
-  padding: 48px 0;
+  padding: 28px 0;
   margin: 0;
 }
 
@@ -4167,7 +4167,7 @@ button {
 .about-home-header {
   text-align: center;
   max-width: 720px;
-  margin: 0 auto 40px;
+  margin: 0 auto 28px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -4278,7 +4278,7 @@ button {
   .tools-strip-section,
   .about-home-section,
   .testimonials-section {
-    padding: 32px 0;
+    padding: 20px 0;
   }
 
   .about-home-grid {
