@@ -8,6 +8,15 @@
 (function () {
   'use strict';
 
+  if (window.history && window.history.replaceState && window.location.protocol !== 'file:') {
+    const p = window.location.pathname;
+    let clean = p.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
+    if (clean.length > 1 && clean.endsWith('/')) clean = clean.slice(0, -1);
+    if (clean !== p) {
+      window.history.replaceState(null, '', clean + window.location.search + window.location.hash);
+    }
+  }
+
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   document.addEventListener('DOMContentLoaded', () => {

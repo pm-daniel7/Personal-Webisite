@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <base href="/" />
+
+  <title>MoneyFlow | Daniel Ander</title>
+  <meta name="description" content="Local-first multi-currency cashflow sync. Built for personal use (not a public product)." />
+  <meta name="author" content="Daniel Ander" />
+  <link rel="canonical" href="https://danielander.com/project-moneyflow" />
+
+  <!-- Open Graph Preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://danielander.com/project-moneyflow" />
+  <meta property="og:title" content="MoneyFlow | Daniel Ander" />
+  <meta property="og:description" content="Local-first multi-currency cashflow sync. Built for personal use (not a public product)." />
+  <meta property="og:image" content="https://danielander.com/preview.jpg" />
+
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://danielander.com/project-moneyflow" />
+  <meta name="twitter:title" content="MoneyFlow | Daniel Ander" />
+  <meta name="twitter:description" content="Local-first multi-currency cashflow sync. Built for personal use (not a public product)." />
+  <meta name="twitter:image" content="https://danielander.com/preview.jpg" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/pmd-swirl.svg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,700&family=Playfair+Display:wght@400;500;700&family=Roboto&family=Caveat:wght@700&family=Mulish:wght@400;600;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="effects.css" />
+
+  <!-- Deferred JS -->
+  <script src="animations.js" defer></script>
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER / NAV
+  ============================================================ -->
+  <header class="header" id="header">
+    <div class="header-content">
+      <div class="header-left">
+        <a href="/" class="header-logo" aria-label="Daniel Ander Home">
+          <img src="assets/pmd-logo.svg" alt="PMD logo" width="91" height="26" />
+        </a>
+
+        <nav class="navigation-desktop" aria-label="Main navigation">
+          <a href="/work" class="nav-link">Work</a>
+          <a href="/projects" class="nav-link is-active" aria-current="page">Projects</a>
+          <a href="/resources" class="nav-link">Resources</a>
+          <a href="/blog" class="nav-link">Blog</a>
+          <a href="/about" class="nav-link">About</a>
+        </nav>
+      </div>
+
+      <div class="header-right">
+        <a href="https://github.com/pm-daniel7" class="header-social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/pmdanielander/" class="header-social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+        <a href="mailto:pmdanielander@gmail.com" class="button white">Email me</a>
+        <button class="burger-menu" id="burger-menu" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="burger-menu__bar"></span>
+          <span class="burger-menu__bar"></span>
+          <span class="burger-menu__bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav class="navigation-mobile" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+      <div class="navigation-mobile__inner">
+        <a href="/work" class="mobile-nav__link">Work</a>
+        <a href="/projects" class="mobile-nav__link is-active" aria-current="page">Projects</a>
+        <a href="/resources" class="mobile-nav__link">Resources</a>
+        <a href="/blog" class="mobile-nav__link">Blog</a>
+        <a href="/about" class="mobile-nav__link">About</a>
+        <div class="mobile-nav__auth">
+          <a href="https://github.com/pm-daniel7" class="header-social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/pmdanielander/" class="header-social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <a href="mailto:pmdanielander@gmail.com" class="button white">Email me</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ============================================================
+       MAIN CONTENT
+  ============================================================ -->
+  <main class="layout">
+
+    <!-- ============================================================
+         SECTION 1: PROJECT DETAIL HERO
+    ============================================================ -->
+    <section class="hero project-detail-hero section" aria-labelledby="moneyflow-headline">
+      <div class="inner-container project-detail-hero__container">
+        <a href="/projects" class="project-breadcrumb" data-animate="fade-up">← Back to Projects</a>
+
+        <div class="project-detail-hero__header" data-animate="fade-up" data-animate-delay="60">
+          <span class="project-badge project-badge--personal">Personal · Prototyping Phase</span>
+          <h1 class="heading-xl" id="moneyflow-headline">MoneyFlow</h1>
+          <div class="project-detail-taglines">
+            <p class="project-detail-tagline text-mulish-lg">Local-first multi-currency cashflow sync.</p>
+            <p class="project-detail-tagline project-detail-tagline--muted text-mulish-md">Built for personal use (not a public product).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 2: THE PROBLEM & CORE FRICTIONS
+    ============================================================ -->
+    <section class="section project-detail-section" aria-labelledby="problem-heading">
+      <div class="inner-container">
+        <div class="project-detail-block" data-animate="fade-up">
+          <span class="project-detail-label">The Problem</span>
+          <h2 class="heading-md" id="problem-heading">Why spreadsheets break under daily cashflow friction</h2>
+          <p class="project-detail-lead">
+            Spreadsheets start with high intent, but quickly break under the friction of daily life. Between micro cash spends, multi-currency income, and reimbursable work expenses, manual tracking becomes exhausting, leading to tracking fatigue, stale mid-month spreadsheets, and silent formula errors.
+          </p>
+        </div>
+
+        <div class="work-section-head project-detail-subhead" data-animate="fade-up">
+          <span class="project-detail-label">Core Frictions</span>
+          <h2 class="heading-md">Four failure modes I needed to eliminate</h2>
+        </div>
+
+        <div class="frictions-grid" data-animate="stagger">
+          <article class="capability-card" data-animate="fade-up" data-animate-delay="0">
+            <span class="capability-card__num">01</span>
+            <h3 class="capability-card__title">Logging Fatigue</h3>
+            <p class="capability-card__desc">Spending 30–60 seconds per small transaction across multiple tabs causes habit drop-off within weeks.</p>
+          </article>
+
+          <article class="capability-card" data-animate="fade-up" data-animate-delay="80">
+            <span class="capability-card__num">02</span>
+            <h3 class="capability-card__title">Fragile Spreadsheet Formulas</h3>
+            <p class="capability-card__desc">Manually carrying balances forward (Auto BBF), deducting work expenses, and tracking peer loans leads to calculation bugs.</p>
+          </article>
+
+          <article class="capability-card" data-animate="fade-up" data-animate-delay="160">
+            <span class="capability-card__num">03</span>
+            <h3 class="capability-card__title">Multi-Currency &amp; FX Distortion</h3>
+            <p class="capability-card__desc">Earning across USD, GBP, or EUR breaks single-currency trackers while still requiring unified Naira (₦) visibility.</p>
+          </article>
+
+          <article class="capability-card" data-animate="fade-up" data-animate-delay="240">
+            <span class="capability-card__num">04</span>
+            <h3 class="capability-card__title">SaaS Lock-In vs. Data Privacy</h3>
+            <p class="capability-card__desc">Commercial budgeting tools store sensitive financial history on third-party servers, while offline-only tools trap records without backup.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 3: THE PROTOTYPE & SOURCE CODE
+    ============================================================ -->
+    <section class="section project-detail-section" aria-labelledby="prototype-heading">
+      <div class="inner-container">
+        <div class="prototype-card" data-animate="fade-up">
+          <div class="prototype-card__content">
+            <span class="project-detail-label">The Prototype</span>
+            <h2 class="heading-md" id="prototype-heading">Logged in &lt; 3 seconds, synced to my private Google Sheet</h2>
+            <p class="project-detail-lead">
+              A personal, zero-SaaS offline PWA that records expenses in under 3 seconds and syncs directly to my private Google Sheet for reporting.
+            </p>
+            <div class="prototype-card__actions">
+              <a href="https://github.com/pm-daniel7/Money-Flow/" class="button white" target="_blank" rel="noopener noreferrer">
+                View Source Code on GitHub
+              </a>
+            </div>
+          </div>
+          <div class="prototype-card__stat" aria-hidden="true">
+            <span class="prototype-card__stat-num">&lt; 3s</span>
+            <span class="prototype-card__stat-label">Offline Expense Capture</span>
+          </div>
+        </div>
+
+        <!-- Project Sibling Navigation -->
+        <div class="project-sibling-nav" data-animate="fade-up">
+          <a href="/project-gateman-ai" class="project-sibling-link">← Previous Project: Gateman-AI</a>
+          <a href="/projects" class="project-sibling-link project-sibling-link--next">All Projects →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="footer-logo" aria-label="Daniel Ander Home">
+            <img src="assets/pmd-logo.svg" alt="PMD logo" width="91" height="26" />
+          </a>
+          <div class="footer-social" aria-label="Social media links">
+            <a href="https://www.linkedin.com/in/pmdanielander/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="footer-social__link">
+              <img src="https://a.storyblok.com/f/89137/48x48/66dcd60c93/ico-linkedin.svg" alt="LinkedIn" width="28" height="28" loading="lazy" />
+            </a>
+            <a href="https://github.com/pm-daniel7" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="footer-social__link">
+              <img src="https://a.storyblok.com/f/89137/48x48/b4b4465621/ico-github.svg" alt="GitHub" width="28" height="28" loading="lazy" />
+            </a>
+            <a href="mailto:pmdanielander@gmail.com" aria-label="Email" class="footer-social__link footer-social__link--email">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2.5" stroke="currentColor" stroke-width="1.75"/>
+                <path d="M3 6l9 7 9-7" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <div class="footer-col">
+            <h4 class="footer-col__heading">Explore</h4>
+            <ul class="footer-col__list">
+              <li><a href="/work" class="footer-col__link">Work &amp; Impact</a></li>
+              <li><a href="/projects" class="footer-col__link">Projects</a></li>
+              <li><a href="/resources" class="footer-col__link">Resources</a></li>
+              <li><a href="/blog" class="footer-col__link">Blog</a></li>
+              <li><a href="/about" class="footer-col__link">About</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-col__heading">Connect</h4>
+            <ul class="footer-col__list">
+              <li><a href="mailto:pmdanielander@gmail.com" class="footer-col__link">pmdanielander@gmail.com</a></li>
+              <li><a href="https://www.linkedin.com/in/pmdanielander/" target="_blank" rel="noopener noreferrer" class="footer-col__link">LinkedIn</a></li>
+              <li><a href="https://github.com/pm-daniel7" target="_blank" rel="noopener noreferrer" class="footer-col__link">GitHub</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom__left">
+          <p class="footer-bottom__made">Daniel Ander, Product Manager</p>
+          <p class="footer-bottom__sub">0→1 product discovery, platform delivery, and cross-functional execution.</p>
+        </div>
+        <div class="footer-bottom__right">
+          <p class="footer-bottom__copy">&copy; 2026 Daniel Ander | All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
