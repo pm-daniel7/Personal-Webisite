@@ -1392,7 +1392,8 @@ button {
 ================================================================= */
 .tools-strip-section {
   background-color: var(--background-color);
-  padding: 72px 0 64px;
+  padding: 48px 0;
+  margin: 0;
   overflow: hidden;
 }
 
@@ -1471,7 +1472,8 @@ button {
 ================================================================= */
 .testimonials-section {
   overflow: hidden;
-  padding: var(--spacing-xxl) 0;
+  padding: 48px 0;
+  margin: 0;
 }
 
 .testimonials-container {
@@ -4149,7 +4151,17 @@ button {
 
 /* Homepage About Me 2x2 Bento Section */
 .about-home-section {
-  padding: clamp(3rem, 6vw, 5rem) 0;
+  padding: 48px 0;
+  margin: 0;
+}
+
+.about-home-section .body-container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.about-home-header .section__headline {
+  margin-bottom: 0;
 }
 
 .about-home-header {
@@ -4263,6 +4275,12 @@ button {
 }
 
 @media (max-width: 768px) {
+  .tools-strip-section,
+  .about-home-section,
+  .testimonials-section {
+    padding: 32px 0;
+  }
+
   .about-home-grid {
     grid-template-columns: 1fr;
   }
